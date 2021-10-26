@@ -18,8 +18,6 @@ public Order(int orderID, String orderType) {
 }
 
 
-
-
 public int getOrderID() {
     return orderID;
 }

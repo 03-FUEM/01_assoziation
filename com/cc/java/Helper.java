@@ -6,4 +6,11 @@ public class Helper {
         System.out.println(outputStr);  
     }
 
+    // Überladene Methode
+    public static void ausgabe(int outputStr){
+        System.out.println(outputStr);
+    }
+
+
+
 }

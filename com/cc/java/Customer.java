@@ -28,7 +28,17 @@ public class Customer {
         order = null;
     }
 
-    public String getOrderDetails(String flag){
+    public void checkOrder(){
+        if (order == null) {  // gibt es das Objekt ???
+            Helper.ausgabe("Kein Auftrag vorhanden!");
+        } else {
+            Helper.ausgabe(getOrderDetails("#type"));
+            Helper.ausgabe(getOrderDetails("#date"));
+            Helper.ausgabe(getOrderDetails("#status")); 
+        }
+    }
+
+    private String getOrderDetails(String flag){
         switch (flag) {
             case "#type": // ordertype 
                 return order.getOrderType();

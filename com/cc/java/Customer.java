@@ -28,12 +28,19 @@ public class Customer {
         order = null;
     }
 
-    public String getOrderDetails(){
-
-        return null;
+    public String getOrderDetails(String flag){
+        switch (flag) {
+            case "#type": // ordertype 
+                return order.getOrderType();
+            case "#date": // orderdate
+                return String.valueOf(order.getOrderDate());
+            case "#status": // orderstatus
+                return String.valueOf(order.isFinished());
+            default:
+                return "Irgendwas ging schief!";
+        }
     }
 
- 
 
     /** Getter */
     public int getId() {

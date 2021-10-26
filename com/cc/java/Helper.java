@@ -11,6 +11,11 @@ public class Helper {
         System.out.println(outputStr);
     }
 
+    public static void ausgabe(boolean outputStr){
+        System.out.println(outputStr);
+    }
+
+
 
 
 }

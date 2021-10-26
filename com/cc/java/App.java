@@ -4,7 +4,9 @@ public class App {
     
     public static void main(String[] args) {
 
-        Helper.ausgabe("hallo"); 
+      Customer customer = new Customer(1, "Maxine Mütze", "Mützenhausen");
+       
+      Helper.ausgabe(customer.getName());
 
     }
 

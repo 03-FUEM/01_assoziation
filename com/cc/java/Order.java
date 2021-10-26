@@ -10,9 +10,14 @@ private LocalDate orderDate;
 private boolean isFinished;
 
 public Order(int orderID, String orderType) {
+
     this.orderID = orderID;
     this.orderType = orderType;
+
+    orderDate = LocalDate.now();
 }
+
+
 
 
 public int getOrderID() {

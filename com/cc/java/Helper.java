@@ -1,5 +1,7 @@
 package com.cc.java;
 
+import java.time.LocalDate;
+
 public class Helper {
 
     public static void ausgabe(String outputStr) {
@@ -11,10 +13,14 @@ public class Helper {
         System.out.println(outputStr);
     }
 
+    // Überladene Methode
     public static void ausgabe(boolean outputStr){
         System.out.println(outputStr);
     }
 
+    public static void ausgabe(Object outputStr){
+        System.out.println(outputStr);
+    }
 
 
 

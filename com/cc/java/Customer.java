@@ -12,8 +12,11 @@ public class Customer {
         this.city = city;
     }
 
-    /** Getter */
+    
 
+
+
+    /** Getter */
     public int getId() {
         return id;
     }

@@ -35,12 +35,19 @@ public class Customer {
             case "#date": // orderdate
                 return String.valueOf(order.getOrderDate());
             case "#status": // orderstatus
-                return String.valueOf(order.isFinished());
+                return checkOrderStatus();
             default:
                 return "Irgendwas ging schief!";
         }
     }
 
+    private String checkOrderStatus(){
+        if (order.isFinished()) {
+            return "Order finished!";
+        } else {
+            return "Order still pending!"; 
+        }
+    }
 
     /** Getter */
     public int getId() {

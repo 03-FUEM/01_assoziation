@@ -9,6 +9,9 @@ public class App {
       customer.initOrder();
       customer.checkOrder();
 
+      // Auftragsstatus auf FERTIG setzen .... ?
+
+
 
     }
 

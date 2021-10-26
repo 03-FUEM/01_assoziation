@@ -1,7 +1,5 @@
 package com.cc.java;
 
-import java.time.LocalDate;
-
 public class Helper {
 
     public static void ausgabe(String outputStr) {

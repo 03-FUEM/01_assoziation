@@ -34,6 +34,10 @@ public boolean isFinished() {
     return isFinished;
 }
 
+public void setFinished(boolean isFinished) {
+    this.isFinished = isFinished;
+}
+
 
 
 

@@ -15,10 +15,13 @@ public class App {
       Helper.ausgabe(customer.getId());
       Helper.ausgabe("-------------");
 
+
+      // Test der Klasse
       Order order = new Order(1, "repair");
       Helper.ausgabe(order.getOrderID());
       Helper.ausgabe(order.getOrderType());
       Helper.ausgabe(order.isFinished());
+      Helper.ausgabe(order.getOrderDate());
 
     }
 

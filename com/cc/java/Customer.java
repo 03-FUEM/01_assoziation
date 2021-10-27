@@ -18,7 +18,7 @@ public class Customer {
 
     public void initOrder(){
         // Referenz auf erzeugtes Objekt im Heap
-        order = new Order(1, "repair");
+        order = new Order(1, "repair", this);
     }
 
     public void removeOrder(){
@@ -75,9 +75,9 @@ public class Customer {
 
     /** Test  */
     public void changeOrderStatus(){
-        // order.setFinished(true);
+        //order.setFinished(true);
         //order.finishOrder();
-        order.startTimer();
+        //order.startTimer();
     }
     
     

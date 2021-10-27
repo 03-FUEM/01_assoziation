@@ -11,7 +11,7 @@ public class App {
 
       // Auftragsstatus auf FERTIG setzen .... ?
 
-      customer.changeOrderStatus();
+     // customer.changeOrderStatus();
       // customer.checkOrder();
 
     }

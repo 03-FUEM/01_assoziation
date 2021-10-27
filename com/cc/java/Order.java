@@ -7,20 +7,22 @@ public class Order {
     
 private int orderID;
 private String orderType;
+private Customer customer;
 
 private LocalDate orderDate;
 private boolean isFinished;
 
 private Timer timer;
 
-public Order(int orderID, String orderType) {
-
+public Order(int orderID, String orderType, Customer customer) {
+     // Werte von aussen
     this.orderID = orderID;
     this.orderType = orderType;
-
-    this.orderDate = LocalDate.now();
+    this.customer = customer;
+     // Werte von innen / Actions ...
+     this.orderDate = LocalDate.now();
+     startTimer();  // Simulation notwendige Zeit
 }
-
 
 public int getOrderID() {
     return orderID;
@@ -42,8 +44,7 @@ public void setFinished(boolean isFinished) {
     this.isFinished = isFinished;
 }
 
-
-public void startTimer(){
+private void startTimer(){
 
     // TimerTask --> finishOrder() + Timer stoppen
    
@@ -60,9 +61,10 @@ public void startTimer(){
     timer.schedule(task, 2*1000);
 }
 
-public void finishOrder(){
+private void finishOrder(){
     isFinished = true;
     Helper.ausgabe("Order: Auftrag erledigt!");
+    Helper.ausgabe(customer);
 }
 
 

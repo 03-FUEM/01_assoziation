@@ -63,8 +63,7 @@ private void startTimer(){
 
 private void finishOrder(){
     isFinished = true;
-    Helper.ausgabe("Order: Auftrag erledigt!");
-    Helper.ausgabe(customer);
+    customer.actOnOrderFinished();
 }
 
 

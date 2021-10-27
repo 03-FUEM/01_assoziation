@@ -60,6 +60,12 @@ public class Customer {
         }
     }
 
+    public void actOnOrderFinished(){
+        Helper.ausgabe("Customer: Auftrag erledigt!");
+    }
+
+
+
     /** Getter */
     public int getId() {
         return id;

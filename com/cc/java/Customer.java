@@ -75,7 +75,9 @@ public class Customer {
 
     /** Test  */
     public void changeOrderStatus(){
-        order.setFinished(true);
+        // order.setFinished(true);
+        //order.finishOrder();
+        order.startTimer();
     }
     
     

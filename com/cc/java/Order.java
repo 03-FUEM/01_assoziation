@@ -1,5 +1,7 @@
 package com.cc.java;
 import java.time.LocalDate;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Order {
     
@@ -8,6 +10,8 @@ private String orderType;
 
 private LocalDate orderDate;
 private boolean isFinished;
+
+private Timer timer;
 
 public Order(int orderID, String orderType) {
 
@@ -39,7 +43,27 @@ public void setFinished(boolean isFinished) {
 }
 
 
+public void startTimer(){
 
+    // TimerTask --> finishOrder() + Timer stoppen
+   
+    TimerTask task = new TimerTask() {
+        @Override
+        public void run() {
+            finishOrder();
+            timer.cancel();
+        }
+    };
+
+    // neuen Timer anlegen / Timer starten mit Parametern
+    timer = new Timer();
+    timer.schedule(task, 2*1000);
+}
+
+public void finishOrder(){
+    isFinished = true;
+    Helper.ausgabe("Order: Auftrag erledigt!");
+}
 
 
 

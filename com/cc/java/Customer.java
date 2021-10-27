@@ -61,7 +61,9 @@ public class Customer {
     }
 
     public void actOnOrderFinished(){
-        Helper.ausgabe("Customer: Auftrag erledigt!");
+       checkOrder();
+       removeOrder();
+       checkOrder();
     }
 
 

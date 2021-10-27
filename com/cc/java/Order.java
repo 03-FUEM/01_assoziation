@@ -58,7 +58,7 @@ private void startTimer(){
 
     // neuen Timer anlegen / Timer starten mit Parametern
     timer = new Timer();
-    timer.schedule(task, 2*1000);
+    timer.schedule(task, 3*1000);
 }
 
 private void finishOrder(){

@@ -35,6 +35,7 @@ public class Customer {
             Helper.ausgabe(getOrderDetails("#type"));
             Helper.ausgabe(getOrderDetails("#date"));
             Helper.ausgabe(getOrderDetails("#status")); 
+            Helper.ausgabe("--------------"); 
         }
     }
 
@@ -72,7 +73,10 @@ public class Customer {
         return city;
     }
 
-    
+    /** Test  */
+    public void changeOrderStatus(){
+        order.setFinished(true);
+    }
     
     
 

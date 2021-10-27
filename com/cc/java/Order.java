@@ -14,7 +14,7 @@ public Order(int orderID, String orderType) {
     this.orderID = orderID;
     this.orderType = orderType;
 
-    orderDate = LocalDate.now();
+    this.orderDate = LocalDate.now();
 }
 
 

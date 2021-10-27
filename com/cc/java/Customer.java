@@ -66,8 +66,6 @@ public class Customer {
        checkOrder();
     }
 
-
-
     /** Getter */
     public int getId() {
         return id;
